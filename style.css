@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+
+    display: grid;
+    grid-template-columns: 1.5fr 3.5fr;
+    grid-template-rows: 100px auto 50px;
+    
+
+    color: #e6edf3;
+    background-color: #30363d;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+header, main, aside, footer {
+    background-color: #0D1117;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+header > div.hbtn > button {
+    background-color: #0D1117;
+    color: #e6edf3;
+    border: 2px solid #0D1117;
+    padding: 7px 12px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 500;
+    font-size: 12pt;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.hbtn {
+    margin: 2.5px;
+}
+
+header div.hbtn:nth-child(1) {
+    border-bottom: 2px solid darkorange
+}
+
+header > div.hbtn > button:hover {
+    background-color: #21262C;
+    transition: 300ms;
+    transform: scale(1.05)
+}
+
+aside {
+    grid-column: 1;
+    grid-row: 1/3;
+    border-right: 2px solid #30363d;
+}
+
+aside > img {
+    display: block;
+    margin: auto;
+    width: 85%;
+    border-radius: 50%;
+    padding: 20px 0px;
+}
+
+aside > h1 {
+    margin: 0px 25px;
+    text-align: left;
+    font-size: 18pt;
+}
+
+aside > p {
+    font-weight: 400;
+    margin: 5px 25px;
+    text-align: justify;
+}
+
+table#infoTable {
+    margin: 15px;
+    border-collapse: collapse;
+}
+
+table#infoTable td {
+    padding: 10px 0px;
+    border-bottom: 2px solid #30363d;
+}
+
+table#infoTable td:nth-child(1) {
+    text-align: center;
+}
+table#infoTable td:nth-child(2) {
+    text-align: right;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section#tab0 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 50px 150px 150px 150px;
+    width: 95%;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
+}
+
+section#tab0 h2 {
+    font-size: 15pt;
+    color: blue;
+}
+
+section#tab0 img {
+    width: 128px;
+    height: 128px;
+}
+
+section#tab0 img:hover {
+    transform: scale(1.1)
+}
+
+section#tab1 {
+    background-color: green;
+    display: none;
+    width: 95%;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
+}
+
+section#tab2 {
+    background-color: red;
+    display: none;
+    width: 95%;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    grid-column: 1/3;
+    grid-row: 3;
+    text-align: center;
+    border-top: 2px solid #30363d;
+}
+
+footer a {
+    color: #e6edf3;
+}
