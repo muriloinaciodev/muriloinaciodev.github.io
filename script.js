@@ -9,11 +9,15 @@ function changeTab(tab) {
     for (let i = 0; i < 3; i++){
         try {
             document.getElementById(`tab${i}`).style.display = 'none'
-            console.log(`tab${i}`)
-        } catch{
-            console.log()
-        }
+        } catch{}
     }
     document.getElementById(`tab${tab-1}`).style.display = 'grid'
-    console.log(`tab${tab-1}`)
 }
+
+function fullScreen(src) {
+    var fullscreenDiv = document.getElementById('fullscreen')
+    fullscreenDiv.style.opacity = 1
+    fullscreenDiv.style.zIndex = 999
+    fullscreenDiv.style.backgroundImage = `url(${src})`
+}
+

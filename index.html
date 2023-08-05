@@ -15,7 +15,7 @@
     <div class="hbtn"><button onclick="changeTab(3)">Pacote Office</button></div>
 </header>
 <aside>
-    <img src="https://avatars.githubusercontent.com/u/104586594?v=4" alt="">
+    <img onclick="fullScreen(this.src)" src="https://avatars.githubusercontent.com/u/104586594?v=4" alt="">
     <h1>Murilo Inácio Borges Barbosa</h1>
     <p>Estudante do Terceiro ano do Ensino Médio e estou estudando Programação pela Internet</p>
     <table id="infoTable">
@@ -47,20 +47,30 @@
 <main>
     <section id="tab0">
         <p style="grid-column: 1/3;">A seguir listei algumas das linguagens de programação/marcação as quais eu tenho conhecimento e habilidade</p>
-        <img title="HTML (Hyper Text Markup Language)" src="imagens/html-alterado.png" alt="Logo do HTML">
+        <img onclick="fullScreen(this.src)" title="HTML (Hyper Text Markup Language)" src="imagens/html-alterado.png" alt="Logo do HTML">
         <div>
             <h2>HTML5</h2>
             <p>O HTML é uma linguagem de marcação que serve para demarcar o conteudo em elementos para serem despostos na tela</p>
         </div>
-        <img title="CSS (Cascading Style Sheet)" src="imagens/css-alterado.png" alt="Logo do CSS">
+        <img onclick="fullScreen(this.src)" title="CSS (Cascading Style Sheet)" src="imagens/css-alterado.png" alt="Logo do CSS">
         <div>
             <h2>CSS3</h2>
             <p>O CSS é uma linguagem de marcação que serve para estilizar o conteudo demarcado pelo HTML, o CSS defini o layout, fontes de letras, tamanho de letras, cores de fundo, cor de letra, sombras e bordas de todos os elementos do HTML</p>
         </div>
-        <img title="JS (JavaScript)" src="imagens/js-original.png" alt="Logo do JavaScript">
+        <img onclick="fullScreen(this.src)" title="JS (JavaScript)" src="imagens/js-original.png" alt="Logo do JavaScript">
         <div>
             <h2>JavaScript</h2>
-            <p>O JavaScript é uma linguagem de programação que permite a interatividade com o site, é a linguagem que controla as ações do site.</p>
+            <p>O JavaScript é uma linguagem de programação client-side que permite a interatividade com o site, é a linguagem que controla as ações do site.</p>
+        </div>
+        <img onclick="fullScreen(this.src)" title="Python" src="imagens/python-alterado.png" alt="Logo do Python">
+        <div>
+            <h2>Python</h2>
+            <p>O Python é uma linguagem de programação que esta em alta no momento, ela é uma linguagem facil de ser aprendida e poderosa. Python pode ser usado para tudo que imaginar, mas é mais usado para Big Data, Analise de Dados e Inteligencia Artificial. </p>
+        </div>
+        <img onclick="fullScreen(this.src)" title="PHP (Hypertext Processor)" src="https://www.php.net//images/logos/new-php-logo.svg" alt="PHP logo" width="256px">
+        <div>
+            <h2>PHP</h2>
+            <p>O PHP é uma linguagem server-side que é principalmente usada para gerar conteúdos dinâmicos em um site.</p>
         </div>
     </section>
     <section id="tab1">
@@ -73,10 +83,18 @@
 <footer>
     <p>
         Confira o 
-        <a href="http://github.com/muriloinaciodev">GitHub</a>
+        <a href="http://github.com/muriloinaciodev" target="_blank">GitHub</a>
         do Criador
     </p>
 </footer>
+
+<div id="fullscreen" onclick="this.style.opacity = 0; this.style.zIndex = -1">
+    <svg viewBox="0 0 30 30" fill="red" width="45px" height="45px">
+        <line x1="8" y1="8" x2="24" y2="24" stroke="#f5f5f5" stroke-width="4"></line>
+        <line x1="8" y1="24" x2="24" y2="8" stroke="#f5f5f5" stroke-width="4"></line>
+    </svg>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
